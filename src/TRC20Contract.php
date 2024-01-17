@@ -390,4 +390,31 @@ class TRC20Contract
     {
         return preg_replace('/[^\w.-]/', '', trim($str));
     }
+
+    /**
+     *  TRC20 All transactions
+     *
+     * @param string $address
+     * @param array $params
+     * @return array
+     *
+     * @throws TronException
+     */
+    public function getTransactionsByArray(string $address, array $params): array
+    {
+        // 将数组转换为URL查询字符串
+        $queryString = http_build_query($params);
+        // 将查询字符串附加到 URL 后面
+        return $this->_tron->getManager()->request("v1/accounts/{$address}/transactions/trc20?" . $queryString, [], 'get');
+    }
+
+    /**
+     * Set fee limit
+     *
+     * @param int $fee_limit
+     */
+    public function setFeeLimit(int $feeLimit): void
+    {
+        $this->feeLimit = $feeLimit;
+    }
 }

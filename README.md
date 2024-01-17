@@ -11,6 +11,6 @@ environment:
 ---
 
 Added: 
-- TransactionBuilder.php
+- TRC20Contract.php
   - setFeeLimit()
   - getTransactionsByArray()
