@@ -5,6 +5,11 @@ Thanks provide such a useful project.
 
 ---
 
+environment:
+- PHP 7.4
+
+---
+
 Added: 
 - TransactionBuilder.php
   - setFeeLimit()
