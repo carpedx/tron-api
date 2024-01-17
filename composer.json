@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Carpedx\\TronAPI\\": "src"
+            "IEXBase\\TronAPI\\": "src"
         }
     },
 
     "autoload-dev": {
         "psr-4": {
-            "Carpedx\\TronAPI\\Test\\": "tests"
+            "IEXBase\\TronAPI\\Test\\": "tests"
         }
     },
 
