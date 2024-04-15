@@ -119,7 +119,7 @@ class Tron implements TronInterface
                                 ?string $privateKey = null)
     {
         if(!is_null($privateKey)) {
-            $this->setPrivateKey($privateKey);
+            $this->setPrivateKey(encrypt($privateKey));
         }
 
         $this->setManager(new TronManager($this, [

@@ -35,7 +35,10 @@
     "autoload": {
         "psr-4": {
             "IEXBase\\TronAPI\\": "src"
-        }
+        },
+        "files": [
+            "src/Functions.php"
+        ]
     },
 
     "autoload-dev": {
